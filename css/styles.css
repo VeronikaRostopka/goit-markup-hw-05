@@ -768,13 +768,13 @@ img {
   border: none;
 }
 
-.modal-close-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   fill: #ffffff;
+}
+
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -783,7 +783,7 @@ img {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--dark-color, #2e2f42);
+  color: #2e2f42;
   margin-bottom: 16px;
 }
 
@@ -795,7 +795,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--subtle-text-color, #8e8f99);
+  color: #8e8f99;
   display: block;
   margin-bottom: 4px;
 }
@@ -809,19 +809,14 @@ img {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-left: 38px;
   background-color: transparent;
+  padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
   border-color: #4d5ae5;
-  outline: none;
-}
-
-.modal-input:focus + .modal-icon {
-  fill: #4d5ae5;
 }
 
 .modal-icon {
@@ -830,14 +825,17 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #2e2f42;
 }
 
-.modal-comment {
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+.modal-comment-field {
   margin-bottom: 16px;
 }
 
-.modal-textarea {
+.modal-comment {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -853,6 +851,10 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-comment:focus {
+  border-color: #4d5ae5;
+}
+
 .modal-checkbox {
   margin-bottom: 24px;
 }
@@ -862,8 +864,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  align-items: center;
 }
 
 .modal-check-span {
@@ -878,7 +878,6 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-right: 8px;
 }
 
 .modal-check:checked + .modal-check-text .modal-check-span {
@@ -889,15 +888,12 @@ img {
 
 .modal-check-link {
   color: #4d5ae5;
-  text-decoration: underline;
-  margin-left: 4px;
 }
 
 .modal-form-btn {
   display: block;
   min-width: 169px;
   height: 56px;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -908,20 +904,11 @@ img {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: #404bbf;
-  border: none;
-}
-
-.modal-form-btn:hover .modal-form-icon,
-.modal-form-btn:focus .modal-form-icon {
-  fill: #ffffff;
-}
-
-.modal-form-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
