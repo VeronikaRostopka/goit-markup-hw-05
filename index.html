@@ -379,15 +379,14 @@
             </div>
 
             <div class="footer-subscribe">
-                <p class="footer-form-text">Subscribe</p>
-                <form class="footer-form">
-                    <label class="footer-form-label" for="footer-email">
-                        <input type="email" name="footer-email" id="footer-email" placeholder="E-mail"
-                            class="footer-form-input">
+                <p class="footer-subscribe-text">Subscribe</p>
+                <form class="footer-subscribe-form">
+                    <label class="footer-subscribe-label">
+                        <input type="email" name="footer-email" placeholder="E-mail" class="footer-subscribe-input" />
                     </label>
-                    <button type="submit" class="footer-form-btn">
+                    <button type="submit" class="footer-subscribe-button">
                         Subscribe
-                        <svg width="24" height="24" class="footer-form-icon">
+                        <svg width="24" height="24" class="footer-subscribe-icon">
                             <use href="./images/icons.svg#icon-plane"></use>
                         </svg>
                     </button>
@@ -397,10 +396,10 @@
     </footer>
 
     <!-- Додаємо розмітку модального вікна -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close-btn">
-                <svg width="8" height="8" class="modal-close-icon">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg width="24" height="24" class="modal-close-icon">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
@@ -410,7 +409,7 @@
                     <label for="user-name" class="modal-label">Name</label>
                     <div class="modal-input-wrap">
                         <input type="text" name="user-name" id="user-name" class="modal-input" />
-                        <svg class="modal-icon" width="18" height="18">
+                        <svg class="modal-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-user"></use>
                         </svg>
                     </div>
@@ -419,7 +418,7 @@
                     <label for="user-phone" class="modal-label">Phone</label>
                     <div class="modal-input-wrap">
                         <input type="text" name="user-phone" id="user-phone" class="modal-input" />
-                        <svg class="modal-icon" width="18" height="24">
+                        <svg class="modal-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-call"></use>
                         </svg>
                     </div>
